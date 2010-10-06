@@ -1,0 +1,18 @@
+development:
+  bucket_name: wheels_development
+  bucket: wheels_development
+  access_key_id: AKIAIDEFW5P6AQLRXWGQ
+  secret_access_key: 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
+
+test:
+  bucket_name: wheels_development
+  bucket: wheels_development
+  access_key_id: AKIAIDEFW5P6AQLRXWGQ
+  secret_access_key: 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
+
+production:
+  bucket_name: wheels_development
+  bucket: wheels_development
+  access_key_id: AKIAIDEFW5P6AQLRXWGQ
+  secret_access_key: 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
+

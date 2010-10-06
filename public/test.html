@@ -1,0 +1,30 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<form action="http://cagym.s3.amazonaws.com/" method="post" enctype="multipart/form-data">
+<input type="text" name="key" value="testfile.txt" />
+<input type="text" name="acl" value="public-read" />
+<input type="text" name="Content-Type" value="text/plain" />
+<input type="hidden" name="AWSAccessKeyId" value="AKIAIDEFW5P6AQLRXWGQ" />
+<input type="hidden" name="policy" value="eyAiZXhwaXJhdGlvbiI6ICIyMDEwLTEyLTAxVDEyOjAwOjAwLjAwMFoiLAogICJjb25kaXRpb25zIjogWwogICAgeyJidWNrZXQiOiAiY2FneW0ifSwKICAgIHsiYWNsIjogInB1YmxpYy1yZWFkIn0KICBdCn0=" />
+<input type="hidden" name="signature" value="UHFNVJi4cz1rVMNJ8MygzsvSAzE=" />
+<input name="file" type="file" />
+<input name="submit" value="Upload" type="submit" />
+</form>
+</body>
+</html>
+<form action="https://#{bucket}.s3.amazonaws.com/" method="post" enctype="multipart/form-data" id="upload-form">
+  <input type="hidden" name="key" value="#{key}/${filename}">
+  <input type="hidden" name="AWSAccessKeyId" value="#{access_key_id}">
+  <input type="hidden" name="acl" value="#{acl}">
+  <input type="hidden" name="policy" value="#{policy}">
+  <input type="hidden" name="signature" value="#{signature}">
+  <input type="hidden" name="success_action_status" value="201">
+  <input type="hidden" name="Content-Type" value="#{content_type}">
+  <input name="file" type="file" />
+  <input name="submit" value="Upload" type="submit" />
+</form>
+
