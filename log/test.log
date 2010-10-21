@@ -260,3 +260,255 @@ test/functional/forums_controller_test.rb:1:in `<top (required)>'
 /usr/lib/ruby/gems/1.9.2/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `block in <main>'
 /usr/lib/ruby/gems/1.9.2/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `each'
 /usr/lib/ruby/gems/1.9.2/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `<main>'
+  [1m[36mSQL (6.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (3.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (3.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered pages/_form.html.haml (27.9ms)
+Rendered pages/edit.html.haml (42.7ms)
+Rendered pages/_form.html.haml (14.1ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2010-10-06 02:14:03 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mSitemap Load (0.6ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 123ms
+  Processing by PagesController#index as HTML
+  [1m[36mSitemap Load (0.5ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 4ms
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mSitemap Load (0.5ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 5ms
+  Processing by PagesController#new as HTML
+  [1m[36mSitemap Load (0.5ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 5ms
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mSitemap Load (0.5ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 5ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{"these"=>"params"}}
+  [1m[36mSitemap Load (0.5ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 6ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{}}
+  [1m[35mSitemap Load (0.5ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 4ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{"these"=>"params"}}
+  [1m[36mSitemap Load (0.5ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 4ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{}}
+  [1m[35mSitemap Load (0.6ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 4ms
+  Processing by PagesController#update as HTML
+  Parameters: {"page"=>{"these"=>"params"}, "id"=>"37"}
+  [1m[36mSitemap Load (0.6ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 5ms
+  [1m[35mSQL (3.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.5ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 3ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSitemap Load (0.5ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 4ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.6ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 4ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSitemap Load (0.5ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 4ms
+  Processing by PagesController#destroy as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mSitemap Load (0.6ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 5ms
+  [1m[35mSQL (3.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  Processing by PagesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.5ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 4ms
+  [1m[36mSQL (8.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (4.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (4.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered pages/_form.html.haml (38.6ms)
+Rendered pages/edit.html.haml (56.9ms)
+Rendered pages/_form.html.haml (19.5ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2010-10-11 11:19:41 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mSitemap Load (0.8ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 299ms
+  Processing by PagesController#index as HTML
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 5ms
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mSitemap Load (0.9ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 7ms
+  Processing by PagesController#new as HTML
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 7ms
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mSitemap Load (0.7ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 7ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{"these"=>"params"}}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 7ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{}}
+  [1m[35mSitemap Load (0.7ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 5ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{"these"=>"params"}}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 6ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{}}
+  [1m[35mSitemap Load (0.7ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 5ms
+  Processing by PagesController#update as HTML
+  Parameters: {"page"=>{"these"=>"params"}, "id"=>"37"}
+  [1m[36mSitemap Load (0.9ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 7ms
+  [1m[35mSQL (4.0ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 5ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSitemap Load (0.7ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 5ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 5ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSitemap Load (0.7ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 5ms
+  Processing by PagesController#destroy as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 7ms
+  [1m[35mSQL (12.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  Processing by PagesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 5ms
+  [1m[36mSQL (38.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (4.5ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (14.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Rendered pages/_form.html.haml (65.0ms)
+Rendered pages/edit.html.haml (232.4ms)
+Rendered pages/_form.html.haml (60.4ms)
+
+
+Started GET "/pages" for 127.0.0.1 at 2010-10-11 17:50:13 -0700
+  Processing by PagesController#index as HTML
+  [1m[35mSitemap Load (36.4ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 555ms
+  Processing by PagesController#index as HTML
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 27ms
+  Processing by PagesController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mSitemap Load (1.0ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 14ms
+  Processing by PagesController#new as HTML
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 14ms
+  Processing by PagesController#edit as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mSitemap Load (0.7ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 7ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{"these"=>"params"}}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 17ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{}}
+  [1m[35mSitemap Load (0.8ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 8ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{"these"=>"params"}}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 34ms
+  Processing by PagesController#create as HTML
+  Parameters: {"page"=>{}}
+  [1m[35mSitemap Load (1.4ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 7ms
+  Processing by PagesController#update as HTML
+  Parameters: {"page"=>{"these"=>"params"}, "id"=>"37"}
+  [1m[36mSitemap Load (0.8ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 8ms
+  [1m[35mSQL (6.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.9ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 8ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSitemap Load (0.7ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 6ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.8ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 8ms
+  Processing by PagesController#update as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSitemap Load (0.9ms)[0m  SELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1
+Completed   in 5ms
+  Processing by PagesController#destroy as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mSitemap Load (0.8ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 8ms
+  [1m[35mSQL (4.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  Processing by PagesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mSitemap Load (0.7ms)[0m  [1mSELECT "sitemaps".* FROM "sitemaps" WHERE ("sitemaps"."menu_text" = 'root') AND ("sitemaps"."parent_id" IS NULL) LIMIT 1[0m
+Completed   in 9ms

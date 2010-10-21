@@ -14,11 +14,17 @@ gem 'mail'
 gem 'paperclip'
 gem 'pg'
 gem 'rails3-generators'
-gem 'RedCloth'
 gem 'wheels', '0.1.25'
 gem 'will_paginate', '~> 3.0.pre2'
 
+group :development, :test do
+  gem 'rspec-rails', '>= 2.0.0.beta.22'
+  gem 'haml-rails'
+  gem 'jquery-rails'
+end
+
 group :test do
   gem 'cucumber-rails'
-  gem 'sqlite3'
+  gem 'sqlite3-ruby'
 end
+
