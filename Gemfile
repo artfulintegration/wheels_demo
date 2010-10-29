@@ -6,25 +6,21 @@ gem 'aws-s3'
 gem 'cancan'
 gem 'casey_jones'
 gem 'da_huangs_ruby_extensions'
-gem 'devise', '1.1.rc2'
+gem 'devise'
 gem 'haml'
 gem 'has_scope'
 gem 'inherited_resources', '1.1.2'
 gem 'mail'
 gem 'paperclip'
-gem 'pg'
-gem 'rails3-generators'
-gem 'wheels', '0.1.25'
-gem 'will_paginate', '~> 3.0.pre2'
 
-group :development, :test do
-  gem 'rspec-rails', '>= 2.0.0.beta.22'
-  gem 'haml-rails'
-  gem 'jquery-rails'
+group :production do
+  gem 'pg'
 end
-
-group :test do
-  gem 'cucumber-rails'
+group :development, :test do
   gem 'sqlite3-ruby'
 end
+gem 'rails3-generators'
+gem 'RedCloth'
+gem 'wheels', :path => '/home/tyler/ruby/current/wheels'
+gem 'will_paginate', '~> 3.0.pre2'
 

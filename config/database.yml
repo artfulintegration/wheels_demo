@@ -1,9 +1,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: cagym_development
+  database: wheels_development
   pool: 5
-  username: dbuser
+  username: tyler
   password: soudough
   host: localhost
   port: 5432
