@@ -7,6 +7,5 @@ WheelsDevelopment::Application.routes.draw do
   root :to => 'pages#show', :level1=>"Artful"
 
   match "/submit_feedback" => "feedbacks#new"
-  match '/software' => 'product_revisions#index'
 end
 
