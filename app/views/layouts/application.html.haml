@@ -2,6 +2,8 @@
 %html
   %head
     %title= "#{AppConfig["title"]}#{" > #{@page.title}" if @page}"
+    %meta{:name=>'description', :content=>AppConfig['meta_tag_description']}
+    %meta{:name=>'keywords', :content=>AppConfig['meta_tag_keywords']}
     = csrf_meta_tag
     /[if lt IE 9]
       = javascript_include_tag 'html5'
