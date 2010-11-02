@@ -21,6 +21,6 @@ group :development, :test do
 end
 gem 'rails3-generators'
 gem 'RedCloth'
-gem 'wheels', :path => '/home/tyler/ruby/current/wheels'
+gem 'wheels', '0.1.27'  # :path => '/home/tyler/ruby/current/wheels'
 gem 'will_paginate', '~> 3.0.pre2'
 
