@@ -159,7 +159,7 @@ div.field {
   size: 100; }
 
 #content {
-  margin: 30px;
+  margin: 15px;
   width: 500px;
   float: left;
   min-height: 400px; }
@@ -168,7 +168,7 @@ div.field {
   float: left;
   width: 180px;
   margin-right: 10px;
-  margin-top: 120px; }
+  margin-top: 40px; }
   #sidebar > ul {
     margin-top: 10px; }
     #sidebar > ul > li {

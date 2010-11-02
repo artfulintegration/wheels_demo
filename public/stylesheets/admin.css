@@ -9,6 +9,9 @@
   font-size: 10px;
   font-family: Verdana; }
 
+#upload_button {
+  visibility: hidden; }
+
 #menub {
   height: 30px;
   overflow: auto; }
@@ -29,3 +32,6 @@
   width: 180px;
   height: 18px;
   background-color: #848484; }
+
+textarea {
+  width: 500px; }
